@@ -9,5 +9,6 @@ setup(name='myPackage',
       author_email='email@domain.com',
       url='https://github.com/mefsantos/branch-testing',
       packages=['.', 'modules'],
+      # Extension('foo', ['src/foo1.c', 'src/foo2.c']),
      )
 
