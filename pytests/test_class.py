@@ -6,5 +6,6 @@ class TestClass(object):
 
     def test_two(self):
         x = "check hello"
-        assert hasattr(x, 'check')
+        assert "check" in x
+
 
