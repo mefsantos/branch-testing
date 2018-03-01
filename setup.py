@@ -10,5 +10,9 @@ setup(name='myPackage',
       url='https://github.com/mefsantos/branch-testing',
       packages=['.', 'modules'],
       # Extension('foo', ['src/foo1.c', 'src/foo2.c']),
+      install_requires=[
+      "numpy",
+      "pandas"
+      ],
      )
 
