@@ -21,7 +21,7 @@ Can and Want to install the software for every possible user:
 (adding installation commands for other OSs soon)
 
 #### Option 2 - Limited User
-Do not have admin previlegies
+Do not have admin privilegies
 
 You may want to reffer to [https://gist.github.com/saurabhshri/46e4069164b87a708b39d947e4527298]
 
