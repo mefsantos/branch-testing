@@ -31,8 +31,9 @@ TL;DR:
 5. Reload .bashrc file: `source ~/.bashrc`
 
 #### Install package dependencies / requirements
-pip install --user -r requirements.txt
+`pip install --user -r requirements.txt`
 
 #### Install Package
-python setup.py install
+`python setup.py install`
+
 

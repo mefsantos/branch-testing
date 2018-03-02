@@ -15,7 +15,7 @@ def friendly(command_subclass):
 
 
 	def modified_run(self):
-		print "Hello, developer, how are you? :)"
+		print "Modified setup run"
 		orig_run(self)
 
 	command_subclass.run = modified_run
