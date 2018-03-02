@@ -24,7 +24,7 @@ Do not have admin previlegies
 You may want to reffer to [https://gist.github.com/saurabhshri/46e4069164b87a708b39d947e4527298]
 
 TL;DR:
-1. Open terminal:
+1. Open terminal
 2. Download pip: 
 	`wget https://bootstrap.pypa.io/get-pip.py`
 3. Install into local directory 
