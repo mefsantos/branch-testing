@@ -14,18 +14,13 @@ def friendly(command_subclass):
 	orig_run = command_subclass.run
 
 
-	def midified_run(self):
+	def modified_run(self):
 		print "Hello, developer, how are you? :)"
 		orig_run(self)
 
 	command_subclass.run = modified_run
 	return command_subclass
 
-
-@friendly
-class CustomDeveloperCommand(develop):
-	print "Developer instalation"
-	pass
 
 @friendly
 class CustomInstallCommand(install):
@@ -41,13 +36,8 @@ setup(name='myPackage',
       url='https://github.com/mefsantos/branch-testing',
       packages=['.', 'modules'],
       # Extension('foo', ['src/foo1.c', 'src/foo2.c']),
-      install_requires=[
-      "numpy",
-      "pandas"
-      ],
       cmdclass={
         'install': CustomInstallCommand,
-        'develop': CustomDeveloperCommand,
       },
      )
 
