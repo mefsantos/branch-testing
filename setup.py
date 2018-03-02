@@ -1,6 +1,37 @@
 #!/usr/bin/env python
 
 from setuptools import setup
+from setuptools.command.develop import develop
+from setuptools.command.install import install
+
+
+def friendly(command_subclass):
+	"""
+	A decorator for classes subclassing one of the setuptools commands.
+
+    It modifies the run() method so that it prints a friendly greeting.
+	"""
+	orig_run = command_subclass.run
+
+
+	def midified_run(self):
+		print "Hello, developer, how are you? :)"
+		orig_run(self)
+
+	command_subclass.run = modified_run
+	return command_subclass
+
+
+@friendly
+class CustomDeveloperCommand(develop):
+	print "Developer instalation"
+	pass
+
+@friendly
+class CustomInstallCommand(install):
+	print "User instalation"
+	pass
+
 
 setup(name='myPackage',
       version='0.1',
@@ -14,5 +45,9 @@ setup(name='myPackage',
       "numpy",
       "pandas"
       ],
+      cmdclass={
+        'install': CustomInstallCommand,
+        'develop': CustomDeveloperCommand,
+      },
      )
 
