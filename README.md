@@ -25,10 +25,14 @@ You may want to reffer to [https://gist.github.com/saurabhshri/46e4069164b87a708
 
 TL;DR:
 1. Open terminal:
-2. Download pip: `wget https://bootstrap.pypa.io/get-pip.py`
-3. Install into local directory `python get-pip.py --user`
-4. Add the instalation path to the $PATH environment: `echo -e '#extending path\nexport PATH=$PATH:~/.local/bin' >> ~/.bashrc`
-5. Reload .bashrc file: `source ~/.bashrc`
+2. Download pip: 
+	`wget https://bootstrap.pypa.io/get-pip.py`
+3. Install into local directory 
+	`python get-pip.py --user`
+4. Add the instalation path to the $PATH environment: 
+	`echo -e '#extending path\nexport PATH=$PATH:~/.local/bin' >> ~/.bashrc`
+5. Reload .bashrc file: 
+	`source ~/.bashrc`
 
 #### Install package dependencies / requirements
 `pip install --user -r requirements.txt`
