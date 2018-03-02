@@ -1,6 +1,8 @@
 # branch-testing
 Testing branches, merges, different files within branches, etc
+
 Testing python package deployment, travis CI, coveralls and pytest
+
 
 ## Instalation Instructions
 
@@ -34,10 +36,10 @@ TL;DR:
 5. Reload .bashrc file: 
 `source ~/.bashrc`
 
-#### Install package dependencies / requirements
+### Install package dependencies / requirements
 `pip install --user -r requirements.txt`
 
-#### Install Package
+### Install Package
 `python setup.py install`
 
 
