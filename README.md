@@ -3,7 +3,7 @@ Testing branches, merges, different files within branches, etc
 
 Testing python package deployment, travis CI, coveralls and pytest
 
-coveralls: [![Coverage Status](https://coveralls.io/repos/github/mefsantos/branch-testing/badge.svg?branch=master)](https://coveralls.io/github/mefsantos/branch-testing?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/mefsantos/branch-testing/badge.svg?branch=master)](https://coveralls.io/github/mefsantos/branch-testing?branch=master)
 
 
 ## Instalation Instructions
