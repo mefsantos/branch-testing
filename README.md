@@ -7,7 +7,7 @@ Testing python package deployment, travis CI, coveralls and pytest
 ## Instalation Instructions
 
 To install the package you are required to have pip in order to install all the 
-pacakge dependencies (later the pacake itself)
+package dependencies (later the pacake itself)
 Furthermore you are assumed to have python installed. Reffer to [https://www.python.org/downloads/] otherwise.
 
 ### Install Python-pip
